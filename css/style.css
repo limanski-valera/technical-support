@@ -1042,6 +1042,10 @@ body::after {
   color: #070507;
 }
 
+.spollers__title::-webkit-details-marker {
+  display: none;
+}
+
 ._spoller-init .spollers__title {
   cursor: pointer;
   /*
@@ -4206,6 +4210,10 @@ body::after {
 
   .footer__column-body {
     gap: 0.9375rem;
+  }
+
+  .spollers-footer__item::-webkit-details-marker {
+    display: none;
   }
 
   .spollers-footer__item:not(:last-child) {
