@@ -4212,6 +4212,10 @@ body::after {
     gap: 0.9375rem;
   }
 
+  .spollers-footer__item::marker {
+    display: none;
+  }
+
   .spollers-footer__item::-webkit-details-marker {
     display: none;
   }
