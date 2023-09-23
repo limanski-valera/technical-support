@@ -1259,7 +1259,7 @@ body::after {
   font-weight: 600;
 }
 
-.offer__button::active {
+.offer__button:active {
   background-color: #FFAD17;
 }
 
