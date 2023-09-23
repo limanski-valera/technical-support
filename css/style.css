@@ -4212,14 +4212,6 @@ body::after {
     gap: 0.9375rem;
   }
 
-  .spollers-footer__item::marker {
-    display: none;
-  }
-
-  .spollers-footer__item::-webkit-details-marker {
-    display: none;
-  }
-
   .spollers-footer__item:not(:last-child) {
     margin-bottom: 1.25rem;
   }
@@ -4238,6 +4230,10 @@ body::after {
         -ms-flex-pack: center;
             justify-content: center;
     padding-left: 0.9375rem;
+  }
+
+  .spollers-footer__title::-webkit-details-marker {
+    display: none;
   }
 
   .spollers-footer__title span {
