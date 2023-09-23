@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Тарифні плани</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230923235158">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo-wrapper">
+					<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Послуги</a></li>
+							<li class="menu__item"><a href="tariffs.html" class="menu__link">Тарифи</a></li>
+							<li class="menu__item"><a href="solutions.html" class="menu__link">Рішення</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Про компанію</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Клієнти</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Блог</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="tel:+380000000000" class="header__call">+38 000 000 00 00</a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="tariffs">
+			<section class="tariffs__main-block main-block">
+				<div class="main-block__container">
+					<h2 class="main-block__title title">Виберіть вид обслуговування</h2>
+					<div data-tabs class="tabs-tariffs">
+						<nav data-tabs-titles class="tabs-tariffs__navigation">
+							<button type="button" class="tabs-tariffs__title _tab-active">
+								Тарифні плани
+							</button>
+							<button type="button" class="tabs-tariffs__title">
+								Пакети годин
+							</button>
+						</nav>
+						<div data-tabs-body class="tabs-tariffs__content">
+							<div class="tabs-tariffs__body">
+								<div class="main-block__text">
+									Тарифні плани зручні компаніям, яким потрібне повне технічне
+									обслуговування. <br />
+									Ми підготуємо оптимальне рішення для підтримки та розвитку
+									<br />ІТ-інфраструктури. Думайте про бізнес, а не технічну
+									підтримку.
+								</div>
+								<div class="main-block__sub-title">Порівняйте тарифи</div>
+								<form action="#" class="main-block__window window-main-block">
+									<div class="window-main-block__header header-window">
+										<div class="header-window__column">
+											<div class="header-window__title">Калькулятор тарифів</div>
+											<div class="header-window__call">Введіть дані для точного прорахунку тарифів</div>
+										</div>
+										<div class="header-window__grid">
+											<div class="header-window__item" id="computer-range">
+												<div class="header-window__top">
+													<div class="header-window__label">Скільки у вас комп’ютерів?</div>
+													<div class="header-window__value">
+														<input type="text" class="_start-value" value="1" disabled name="computer">
+													</div>
+												</div>
+												<div class="header-window__range-wrapper">
+													<div class="header-window__range">
+													</div>
+													<div class="header-window__values-range">
+														<span class="header-window__range-value _start">0</span>
+														<span class="header-window__range-value _end">100+</span>
+													</div>
+												</div>
+											</div>
+											<div class="header-window__item" id="servers-range">
+												<div class="header-window__top">
+													<div class="header-window__label">Серверів та віртуальних машин?</div>
+													<div class="header-window__value">
+														<input type="text" class="_start-value" value="0" disabled name="server">
+													</div>
+												</div>
+												<div class="header-window__range-wrapper">
+													<div class="header-window__range">
+
+													</div>
+													<div class="header-window__values-range">
+														<span class="header-window__range-value _start">0</span>
+														<span class="header-window__range-value _end">25+</span>
+													</div>
+												</div>
+											</div>
+											<div class="header-window__item">
+												<div class="header-window__top">
+													<div class="header-window__label">В які дні працюєте?</div>
+												</div>
+												<div class="header-window__checkboxes">
+													<div class="header-window__checkbox">
+														<input id="d_1" class="header-window__input-checkbox" checked type="checkbox" value="pn" name="worsDay">
+														<label for="d_1" class="header-window__label-checkbox">Пн</label>
+													</div>
+													<div class="header-window__checkbox">
+														<input id="d_2" class="header-window__input-checkbox" checked type="checkbox" value="vt" name="worsDay">
+														<label for="d_2" class="header-window__label-checkbox">Вт</label>
+													</div>
+													<div class="header-window__checkbox">
+														<input id="d_3" class="header-window__input-checkbox" checked type="checkbox" value="sr" name="worsDay">
+														<label for="d_3" class="header-window__label-checkbox">Ср</label>
+													</div>
+													<div class="header-window__checkbox">
+														<input id="d_4" class="header-window__input-checkbox" checked type="checkbox" value="cht" name="worsDay">
+														<label for="d_4" class="header-window__label-checkbox">Чт</label>
+													</div>
+													<div class="header-window__checkbox">
+														<input id="d_5" class="header-window__input-checkbox" checked type="checkbox" value="pt" name="worsDay">
+														<label for="d_5" class="header-window__label-checkbox">Пт</label>
+													</div>
+													<div class="header-window__checkbox">
+														<input id="d_6" class="header-window__input-checkbox" type="checkbox" value="sb" name="worsDay">
+														<label for="d_6" class="header-window__label-checkbox">Сб</label>
+													</div>
+													<div class="header-window__checkbox">
+														<input id="d_7" class="header-window__input-checkbox" type="checkbox" value="nd" name="worsDay">
+														<label for="d_7" class="header-window__label-checkbox">Нд</label>
+													</div>
+												</div>
+
+											</div>
+											<div class="header-window__item" id="time-range">
+												<div class="header-window__top">
+													<div class="header-window__label">З скількох до скількох годин?</div>
+													<div class="header-window__value">
+														<input type="text" class="_start-value" value="9" disabled name="timeStart">
+														<span>-</span>
+														<input type="text" class="_end-value" value="18" disabled name="timeEnd">
+													</div>
+												</div>
+												<div class="header-window__range-wrapper">
+													<div class="header-window__range">
+
+													</div>
+													<div class="header-window__values-range">
+														<span class="header-window__range-value _start">0:00</span>
+														<span class="header-window__range-value">12:00</span>
+														<span class="header-window__range-value _end">23:59</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="window-main-block__content content-window">
+										<div class="content-window__title">Професійне IT-обслуговування
+											з SLA</div>
+										<div class="content-window__tariff">
+											<div>Мінімальний</div>
+											00000грн/місяць
+										</div>
+										<div class="content-window__tariff">
+											<div>Середній</div>
+											00000грн/місяць
+										</div>
+										<div class="content-window__tariff">
+											<div>Оптимальний</div>
+											00000грн/місяць
+										</div>
+										<div class="content-window__label">Режим обслуговування</div>
+										<div class="content-window__value">9/5</div>
+										<div class="content-window__value">9/5</div>
+										<div class="content-window__value">9/5</div>
+										<div class="content-window__label">Годин на місяць</div>
+										<div class="content-window__value">4,5 годин підтримки</div>
+										<div class="content-window__value">7 годин підтримки</div>
+										<div class="content-window__value">9 годин підтримки</div>
+										<div class="content-window__label">Час реакції</div>
+										<div class="content-window__value">до 1 години</div>
+										<div class="content-window__value">до 30 хвилин</div>
+										<div class="content-window__value">до 15 хвилин</div>
+										<div class="content-window__label">Виділено технічного директора</div>
+										<div class="content-window__value"><span class="_icon-minus"></span></div>
+										<div class="content-window__value"><span class="_icon-minus"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__label">Персональний системний адміністратор</div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__label">Підбір обладнання та ліцензій</div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__label">Комунікація з провайдерами</div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__label">Моніторинг серверів, мережевого обладнання</div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__label">Вартість додаткової години</div>
+										<div class="content-window__value">1000 грн</div>
+										<div class="content-window__value">900 грн</div>
+										<div class="content-window__value">800 грн</div>
+										<span class="content-window__empty-block"></span>
+										<div class="content-window__button-wrapper">
+											<button type="submit" name="minimal" class="content-window__button">Залишити заявку</button>
+										</div>
+										<div class="content-window__button-wrapper">
+											<button type="submit" name="optimal" class="content-window__button">Залишити заявку</button>
+										</div>
+										<div class="content-window__button-wrapper">
+											<button type="submit" name="maximal" class="content-window__button">Залишити заявку</button>
+										</div>
+										<span class="content-window__decor content-window__decor--first"></span>
+										<span class="content-window__decor content-window__decor--second"></span>
+										<span class="content-window__decor content-window__decor--third"></span>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-tariffs__body">
+								<div class="main-block__text">
+									Пакети підходять для компаній із своїм штатним технічним
+									спеціалістом, якому потрібні компетенції для реалізації складних
+									технічних рішень. Надаємо 1-у, 2-ю та 3-ю лінію технічної підтримки
+									залежно від завдань
+								</div>
+								<div class="main-block__sub-title">Порівняйте пакети</div>
+								<form action="#" class="main-block__window window-main-block">
+									<div class="window-main-block__content content-window _package">
+										<div class="content-window__title">Професійне IT-обслуговування
+											з SLA</div>
+										<div class="content-window__tariff">
+											<div>Мінімальний</div>
+											00000грн/місяць
+										</div>
+										<div class="content-window__tariff">
+											<div>Середній</div>
+											00000грн/місяць
+										</div>
+										<div class="content-window__tariff">
+											<div>Оптимальний</div>
+											00000грн/місяць
+										</div>
+										<div class="content-window__label">Режим обслуговування</div>
+										<div class="content-window__value">9/5</div>
+										<div class="content-window__value">9/5</div>
+										<div class="content-window__value">9/5</div>
+										<div class="content-window__label">Годин на місяць</div>
+										<div class="content-window__value">10 годин підтримки</div>
+										<div class="content-window__value">20 годин підтримки</div>
+										<div class="content-window__value">30 годин підтримки</div>
+										<div class="content-window__label">Час реакції</div>
+										<div class="content-window__value">до 1 години</div>
+										<div class="content-window__value">до 1 години</div>
+										<div class="content-window__value">до 1 години</div>
+										<div class="content-window__label">Персональний системний адміністратор</div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__value"><span class="_icon-check"></span></div>
+										<div class="content-window__label">Вартість додаткової години</div>
+										<div class="content-window__value">1000 грн</div>
+										<div class="content-window__value">900 грн</div>
+										<div class="content-window__value">800 грн</div>
+										<span class="content-window__empty-block"></span>
+										<div class="content-window__button-wrapper">
+											<button type="submit" name="minimal" class="content-window__button">Залишити заявку</button>
+										</div>
+										<div class="content-window__button-wrapper">
+											<button type="submit" name="optimal" class="content-window__button">Залишити заявку</button>
+										</div>
+										<div class="content-window__button-wrapper">
+											<button type="submit" name="maximal" class="content-window__button">Залишити заявку</button>
+										</div>
+										<span class="content-window__decor content-window__decor--first"></span>
+										<span class="content-window__decor content-window__decor--second"></span>
+										<span class="content-window__decor content-window__decor--third"></span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tariffs__services services">
+				<div class="services__container">
+					<h2 class="services__title title">Послуги</h2>
+					<div class="services__items">
+						<article class="services__item item-services">
+							<div class="item-services__body">
+								<div class="item-services__content">
+									<h3 class="item-services__title">
+										<a href="#">Технічне
+											обслуговування ПК</a>
+									</h3>
+									<div class="item-services__text">Налаштування, визначення технічних
+										проблем, модернізація робочих місць
+										та підбір нового обладнання</div>
+								</div>
+								<a href="#" class="item-services__link _icon-arrow"></a>
+							</div>
+							<a href="#" class="item-services__image">
+								<picture><source srcset="img/tariffs/services_01.webp" type="image/webp"><img src="img/tariffs/services_01.png" alt="service"></picture>
+							</a>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__body">
+								<div class="item-services__content">
+									<h3 class="item-services__title">
+										<a href="#">Обслуговування
+											серверів</a>
+									</h3>
+									<div class="item-services__text">Підтримка, віддалене адміністрування
+										та моніторинг серверів. Усунення причин
+										сбоїв, зниження часу простою</div>
+								</div>
+								<a href="#" class="item-services__link _icon-arrow"></a>
+							</div>
+							<a href="#" class="item-services__image">
+								<picture><source srcset="img/tariffs/services_02.webp" type="image/webp"><img src="img/tariffs/services_02.png" alt="service"></picture>
+							</a>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__body">
+								<div class="item-services__content">
+									<h3 class="item-services__title">
+										<a href="#">Віддалений
+											доступ</a>
+									</h3>
+									<div class="item-services__text">НОрганізація групової
+										віддаленої роботи через
+										захищені з’єднання</div>
+								</div>
+								<a href="#" class="item-services__link _icon-arrow"></a>
+							</div>
+							<a href="#" class="item-services__image">
+								<picture><source srcset="img/tariffs/services_03.webp" type="image/webp"><img src="img/tariffs/services_03.png" alt="service"></picture>
+							</a>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__body">
+								<div class="item-services__content">
+									<h3 class="item-services__title">
+										<a href="#">Адміністрування
+											мережі</a>
+									</h3>
+									<div class="item-services__text">Діагностика, виправлення збоїв,
+										збільшення ефективності роботи
+										мережі</div>
+								</div>
+								<a href="#" class="item-services__link _icon-arrow"></a>
+							</div>
+							<a href="#" class="item-services__image">
+								<picture><source srcset="img/tariffs/services_04.webp" type="image/webp"><img src="img/tariffs/services_04.png" alt="service"></picture>
+							</a>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__body">
+								<div class="item-services__content">
+									<h3 class="item-services__title">
+										<a href="#">Розробка сайтів
+											та застосунків</a>
+									</h3>
+									<div class="item-services__text">Створюємо сучасні сайти та
+										застосунки. Адаптуємо до потреб
+										клієнтів, а також робимо
+										редизайн</div>
+								</div>
+								<a href="#" class="item-services__link _icon-arrow"></a>
+							</div>
+							<a href="#" class="item-services__image">
+								<picture><source srcset="img/tariffs/services_05.webp" type="image/webp"><img src="img/tariffs/services_05.png" alt="service"></picture>
+							</a>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__body">
+								<div class="item-services__content">
+									<h3 class="item-services__title">
+										<a href="#">Корпоративна
+											пошта</a>
+									</h3>
+									<div class="item-services__text">Підключеня, налаштування та
+										супровід почтових рішень, що
+										підійдуть для любого типу
+										бізнесу</div>
+								</div>
+								<a href="#" class="item-services__link _icon-arrow"></a>
+							</div>
+							<a href="#" class="item-services__image">
+								<picture><source srcset="img/tariffs/services_06.webp" type="image/webp"><img src="img/tariffs/services_06.png" alt="service"></picture>
+							</a>
+						</article>
+					</div>
+					<div class="services__button-wrapper">
+						<a href="#" class="services__button button">До інших послуг</a>
+					</div>
+				</div>
+			</section>
+			<section class="tariffs__offer offer">
+				<div class="offer__container">
+					<div class="offer__wrapper">
+						<div class="offer__block">
+							<div class="offer__content">
+								<h2 class="offer__title">Запросити комерційну пропозицію</h2>
+								<div class="offer__sub-title">Розрахуйте вартість обслуговування вашої
+									компанії і отримайте комерційну пропозицію
+									зручним для вас шляхом</div>
+								<a href="" class="offer__button">Отримати КП</a>
+							</div>
+							<div class="offer__image">
+								<img src="img/tariffs/commercial-decor.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tariffs__faq faq">
+				<div class="faq__container">
+					<h2 class="faq__title title">На ваші запитання є відповідь</h2>
+					<div data-spollers class="faq__spollers spollers">
+						<details class="spollers__item">
+							<summary class="spollers__title">Для чого потрібний IT-аутсорсинг?</summary>
+							<div class="spollers__body">Контент спойлера</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Що краще наявність власного системного адміністратора чи IT-аутсорсинг?</summary>
+							<div class="spollers__body">Контент спойлера</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Чим ми кращі за інші аутсорсингові компанії?</summary>
+							<div class="spollers__body">Контент спойлера</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Чому не потрібно боятись залежності від IT-аутсорсингу?</summary>
+							<div class="spollers__body">Контент спойлера</div>
+						</details>
+					</div>
+				</div>
+			</section>
+			<section class="tariffs__form-section form-section">
+				<div class="form-section__container">
+					<h2 class="form-section__title title"><span class="_orange">Залиште заявку </span>на консультацію
+						та базовий аудит</h2>
+					<form action="#" class="form-section__form form">
+						<div class="form__body">
+							<div class="form__inputs-block">
+								<div class="form__label">Введіть свої дані</div>
+								<div class="form__inputs">
+									<div class="form__item">
+										<input autocomplete="off" type="text" name="name" placeholder="Прізвище Ім’я" class="form__input input" required>
+									</div>
+									<div class="form__item">
+										<input autocomplete="off" type="text" name="email" placeholder="Email" class="form__input input" required>
+									</div>
+									<div class="form__item">
+										<input autocomplete="off" type="text" name="number" placeholder="Номер телефону" class="form__input input" required>
+									</div>
+								</div>
+							</div>
+							<div class="form__radio">
+								<div class="form__label">Виберіть зручний
+									спосіб для зв’язку</div>
+								<div class="form__options options">
+									<div class="options__item">
+										<input id="connect_1" class="options__input" checked type="radio" value="phone" name="option">
+										<label for="connect_1" class="options__label"><span class="options__text">Телефонний звінок</span></label>
+									</div>
+									<div class="options__item">
+										<input id="connect_2" class="options__input" type="radio" value="telegram" name="option">
+										<label for="connect_2" class="options__label"><span class="options__text">Telegram</span></label>
+									</div>
+									<div class="options__item">
+										<input id="connect_3" class="options__input" type="radio" value="viber" name="option">
+										<label for="connect_3" class="options__label"><span class="options__text">Viber</span></label>
+									</div>
+									<div class="options__item">
+										<input id="connect_4" class="options__input" type="radio" value="email" name="option">
+										<label for="connect_4" class="options__label"><span class="options__text">Email</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<button class="form__button" type="submit">Надіслати</button>
+							<div class="form__text">
+								Відправляючи свої дані, ви підтверджуєте свій дозвіл
+								<a href="#">на обробку ваших персональних даних</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<div class="footer__logo-wrapper">
+							<a href="" class="footer__logo"><img src="img/logo.svg" alt=""></a>
+						</div>
+						<div data-spollers data-one-spoller class="footer__spollers spollers-footer">
+							<details class="spollers-footer__item">
+								<summary data-spoller class="spollers-footer__title">Послугли<span></span></summary>
+								<div class="spollers-footer__body">
+									<a href="#" class="spollers-footer__link">Послуга</a>
+									<a href="#" class="spollers-footer__link">Послуга</a>
+									<a href="#" class="spollers-footer__link">Послуга</a>
+									<a href="#" class="spollers-footer__link">Послуга</a>
+								</div>
+							</details>
+							<details class="spollers-footer__item">
+								<summary data-spoller class="spollers-footer__title">Абонентам<span></span></summary>
+								<div class="spollers-footer__body">Контент спойлера</div>
+							</details>
+							<details class="spollers-footer__item">
+								<summary data-spoller class="spollers-footer__title">Про компанію<span></span></summary>
+								<div class="spollers-footer__body">Контент спойлера</div>
+							</details>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="tariffs.html" class="menu-footer__link link-footer">Тарифи</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link link-footer">Про компанію</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link link-footer">Клієнти</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link link-footer">Блог</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link link-footer">Новини</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="contacts.html" class="menu-footer__link link-footer">Контакти</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link link-footer">Політика конфіденційності</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__label">Послуги</h4>
+						<ul class="footer__services">
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Обслуговування комп’ютерів</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Обслуговування серверів</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Віртуалізація</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Корпоративні данні</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Віддалений доступ</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Адміністрування мережі</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">IP-телефонія</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">Корпоративна пошта</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">База даних</a>
+							</li>
+							<li class="footer__item-service">
+								<a href="#" class="footer__link link-footer">IT-аудит</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<div class="footer__part-column">
+							<h4 class="footer__label">Технічна підтримка</h4>
+							<div class="footer__column-body">
+							</div>
+						</div>
+						<div class="footer__part-column">
+							<h4 class="footer__label">Зв'яжіться з нами</h4>
+							<div class="footer__column-body">
+								<a href="#" class="footer__link link-footer _icon-s-viber _societ"><span class="_societ-text">Viber</span></a>
+								<a href="#" class="footer__link link-footer _icon-s-telegram _societ"><span class="_societ-text">Telegram</span></a>
+							</div>
+						</div>
+						<div class="footer__part-column">
+							<h4 class="footer__label">Наша адреса</h4>
+							<div class="footer__column-body"></div>
+						</div>
+						<div class="footer__part-column">
+							<h4 class="footer__label">Ми в соцмережах</h4>
+							<div class="footer__column-body">
+								<a href="#" class="footer__link link-footer _icon-s-insta _societ"><span class="_societ-text">Instagram</span></a>
+								<a href="#" class="footer__link link-footer _icon-s-telegram _societ"><span class="_societ-text">Telegram</span></a>
+								<a href="#" class="footer__link link-footer _icon-s-youtube _societ"><span class="_societ-text">YouTube</span></a>
+								<a href="#" class="footer__link link-footer _icon-s-facebook _societ"><span class="_societ-text">Facebook</span></a>
+								<a href="#" class="footer__link link-footer _icon-s-tik-tok _societ"><span class="_societ-text">Tik-Tok</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">Copyright © 2023 "Техпідтримка.укр" Всі права захищені</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__body">
+					<div class="popup__image">
+						<img src="img/popup-thanks.svg" alt="check">
+					</div>
+					<h2 class="popup__title">
+						Дякуємо, ваша заявка прийнята</h2>
+					<div class="popup__text">В найближчий час з вами зв’яжеться
+						менеджер для консультації.</div>
+					<a href="#" class="popup__close">Повернутись на головну</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230923235158"></script>
+</body>
+
+</html>
