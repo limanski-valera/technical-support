@@ -2422,7 +2422,7 @@
     window.addEventListener("load", (function(e) {
         if (document.documentElement.clientWidth < 480 && document.querySelector(".direction__card")) initCarSpoller();
         if (document.querySelector("[data-solutions]") && document.querySelector("[data-solutions-item]")) initSolutions();
-        initTariffForm();
+        if (document.querySelector("[data-computers]") && document.querySelector("[data-servers]")) initTariffForm();
     }));
     window["FLS"] = true;
     isWebp();
