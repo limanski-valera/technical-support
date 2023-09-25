@@ -2324,7 +2324,106 @@
             }
         }));
     }
-    if (document.documentElement.clientWidth < 480 && document.querySelector(".direction__card")) initCarSpoller();
+    function initSolutions() {
+        const buttons = document.querySelectorAll(".tabs-solutions__title");
+        const tabs = document.querySelectorAll(".body-tab-solutions");
+        const solutionsItems = document.querySelectorAll("[data-solutions-item]");
+        let solutionsArray;
+        const startActiveTitle = document.querySelector(".tabs-solutions__title._tab-active");
+        function getSolutions(activeButton) {
+            let activeTab;
+            solutionsArray = [];
+            buttons.forEach(((button, index) => {
+                if (button === activeButton) activeTab = tabs[index];
+            }));
+            const solutions = activeTab.querySelectorAll("[data-solutions]");
+            solutions.forEach((item => {
+                if (item.dataset.solutions) solutionsArray.push(item.dataset.solutions);
+            }));
+            solutionsItems.forEach((solutionItem => {
+                if (!solutionsArray.includes(solutionItem.dataset.solutionsItem)) solutionItem.style.display = "none"; else solutionItem.style.display = "block";
+            }));
+        }
+        getSolutions(startActiveTitle);
+        document.addEventListener("click", (e => {
+            if (e.target.closest(".tabs-solutions__title")) getSolutions(e.target.closest(".tabs-solutions__title"));
+        }));
+    }
+    function initTariffForm() {
+        const timeModeValues = document.querySelectorAll("[data-time-mode]");
+        const dayInputs = document.querySelectorAll(".header-window__input-checkbox");
+        function getDays() {
+            let days = 0;
+            dayInputs.forEach((dayInput => {
+                if (dayInput.checked) days += 1;
+            }));
+            return days;
+        }
+        function getTime() {
+            const timeStart = document.querySelector("[data-time-start]").value;
+            const timeEnd = document.querySelector("[data-time-end]").value;
+            let timeValue = timeEnd - timeStart;
+            return timeValue;
+        }
+        function setTimeModeValues(time, days) {
+            timeModeValues.forEach((timeModeValue => {
+                timeModeValue.textContent = `${time}/${days}`;
+            }));
+        }
+        function setPrices(hours, days) {
+            const computersCount = +document.querySelector("[data-computers]").value;
+            const serversCount = +document.querySelector("[data-servers]").value;
+            function setMinimalPrice() {
+                const priceContainers = document.querySelectorAll("[data-price-min]");
+                const value = Math.ceil((200 * computersCount + 300 * serversCount) * (days * .2) * (hours * .11));
+                priceContainers.forEach((priceContainer => {
+                    priceContainer.textContent = `${value}грн/місяць`;
+                }));
+                return value;
+            }
+            function setMiddlePrice() {
+                const priceContainers = document.querySelectorAll("[data-price-middle]");
+                const value = Math.ceil(setMinimalPrice() * 1.3);
+                priceContainers.forEach((priceContainer => {
+                    priceContainer.textContent = `${value}грн/місяць`;
+                }));
+            }
+            function setMaxPrice() {
+                const priceContainers = document.querySelectorAll("[data-price-max]");
+                const value = Math.ceil(setMinimalPrice() * 1.6);
+                priceContainers.forEach((priceContainer => {
+                    priceContainer.textContent = `${value}грн/місяць`;
+                }));
+            }
+            getDays();
+            getTime();
+            setMinimalPrice();
+            setMiddlePrice();
+            setMaxPrice();
+        }
+        function changeAllValues() {
+            const days = getDays();
+            const hours = getTime();
+            setTimeModeValues(hours, days);
+            setPrices(hours, days);
+        }
+        changeAllValues();
+        document.addEventListener("mouseup", (e => {
+            setTimeout((() => {
+                changeAllValues();
+            }), 100);
+        }));
+        document.addEventListener("touchend", (e => {
+            setTimeout((() => {
+                changeAllValues();
+            }), 100);
+        }));
+    }
+    window.addEventListener("load", (function(e) {
+        if (document.documentElement.clientWidth < 480 && document.querySelector(".direction__card")) initCarSpoller();
+        if (document.querySelector("[data-solutions]") && document.querySelector("[data-solutions-item]")) initSolutions();
+        initTariffForm();
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

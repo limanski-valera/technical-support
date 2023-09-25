@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230924103715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230925231453">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -58,7 +58,7 @@
 									підтримку.
 								</div>
 								<div class="main-block__sub-title">Порівняйте тарифи</div>
-								<form action="#" class="main-block__window window-main-block">
+								<form action="#" class="main-block__window window-main-block" id="mainForm">
 									<div class="window-main-block__header header-window">
 										<div class="header-window__column">
 											<div class="header-window__title">Калькулятор тарифів</div>
@@ -69,7 +69,7 @@
 												<div class="header-window__top">
 													<div class="header-window__label">Скільки у вас комп’ютерів?</div>
 													<div class="header-window__value">
-														<input type="text" class="_start-value" value="1" disabled name="computer">
+														<input type="text" class="_start-value" value="1" disabled name="computer" data-computers>
 													</div>
 												</div>
 												<div class="header-window__range-wrapper">
@@ -85,7 +85,7 @@
 												<div class="header-window__top">
 													<div class="header-window__label">Серверів та віртуальних машин?</div>
 													<div class="header-window__value">
-														<input type="text" class="_start-value" value="0" disabled name="server">
+														<input type="text" class="_start-value" value="0" disabled name="server" data-servers>
 													</div>
 												</div>
 												<div class="header-window__range-wrapper">
@@ -138,9 +138,9 @@
 												<div class="header-window__top">
 													<div class="header-window__label">З скількох до скількох годин?</div>
 													<div class="header-window__value">
-														<input type="text" class="_start-value" value="9" disabled name="timeStart">
+														<input type="text" class="_start-value" value="9" disabled name="timeStart" data-time-start>
 														<span>-</span>
-														<input type="text" class="_end-value" value="18" disabled name="timeEnd">
+														<input type="text" class="_end-value" value="18" disabled name="timeEnd" data-time-end>
 													</div>
 												</div>
 												<div class="header-window__range-wrapper">
@@ -161,20 +161,20 @@
 											з SLA</div>
 										<div class="content-window__tariff">
 											<div>Мінімальний</div>
-											00000грн/місяць
+											<span data-price-min>00000грн/місяць</span>
 										</div>
 										<div class="content-window__tariff">
 											<div>Середній</div>
-											00000грн/місяць
+											<span data-price-middle>00000грн/місяць</span>
 										</div>
 										<div class="content-window__tariff">
 											<div>Оптимальний</div>
-											00000грн/місяць
+											<span data-price-max>00000грн/місяць</span>
 										</div>
 										<div class="content-window__label">Режим обслуговування</div>
-										<div class="content-window__value">9/5</div>
-										<div class="content-window__value">9/5</div>
-										<div class="content-window__value">9/5</div>
+										<div class="content-window__value" data-time-mode>9/5</div>
+										<div class="content-window__value" data-time-mode>9/5</div>
+										<div class="content-window__value" data-time-mode>9/5</div>
 										<div class="content-window__label">Годин на місяць</div>
 										<div class="content-window__value">4,5 годин підтримки</div>
 										<div class="content-window__value">7 годин підтримки</div>
@@ -237,15 +237,15 @@
 											з SLA</div>
 										<div class="content-window__tariff">
 											<div>Мінімальний</div>
-											00000грн/місяць
+											<span data-price-min="">00000грн/місяць</span>
 										</div>
 										<div class="content-window__tariff">
 											<div>Середній</div>
-											00000грн/місяць
+											<span data-price-middle="">00000грн/місяць</span>
 										</div>
 										<div class="content-window__tariff">
 											<div>Оптимальний</div>
-											00000грн/місяць
+											<span data-price-max="">00000грн/місяць</span>
 										</div>
 										<div class="content-window__label">Режим обслуговування</div>
 										<div class="content-window__value">9/5</div>
@@ -642,7 +642,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230924103715"></script>
+	<script src="js/app.min.js?_v=20230925231453"></script>
 </body>
 
 </html>
